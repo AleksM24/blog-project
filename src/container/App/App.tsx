@@ -3,6 +3,7 @@ import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 
 type Props = {};
+
 const App = (props: Props) => {
   return (
     <>
@@ -12,4 +13,5 @@ const App = (props: Props) => {
     </>
   );
 };
+
 export default App;
