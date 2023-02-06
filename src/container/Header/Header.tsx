@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import Menu from "components/menu/Menu";
 import Logo from "components/logo/Logo";
 import { Container } from "@mui/material";
-import ".//Header.scss";
+import "./Header.scss";
 
 type Props = {};
 

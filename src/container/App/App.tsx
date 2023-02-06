@@ -1,6 +1,6 @@
-import Header from "../Header/Header";
-import Main from "../Main/Main";
-import Footer from "../Footer/Footer";
+import Header from "../header/Header";
+import Main from "../main/Main";
+import Footer from "../footer/Footer";
 import { StyledEngineProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
