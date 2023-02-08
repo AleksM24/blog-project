@@ -1,4 +1,5 @@
 import { Container } from "@mui/material";
+import AdventuresBlock from "components/adventures-block/AdventuresBlock";
 import Home from "pages/home/Home";
 import "./Main.scss";
 
@@ -13,6 +14,7 @@ const Main = (props: Props) => {
         }}
       >
         <Home />
+        <AdventuresBlock />
       </Container>
     </div>
   );
