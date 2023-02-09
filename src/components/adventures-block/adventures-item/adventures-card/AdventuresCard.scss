@@ -1,0 +1,36 @@
+.card-wrap{
+    margin: 10px;
+}
+
+.adv-card {
+    background-color: #505b4e;
+    height: 330px;
+    position: absolute;
+    top: 200px;
+}
+
+.category-btn{
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    text-transform: inherit;
+    background-color: rgba(255,255,255,.1);
+    padding: 0 10px 0 10px;
+    border-radius: 20px;
+    color: rgba(255,255,255,.8);
+    margin-bottom: 10px;
+}
+
+.card-title{
+    color: white;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+}
+
+.card-text{
+    color: white;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 0 10px 0;
+}

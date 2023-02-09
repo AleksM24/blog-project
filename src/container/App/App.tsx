@@ -3,7 +3,6 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Header from "../header/Header";
 import Main from "../main/Main";
 import Footer from "../footer/Footer";
-import "../../styles/base.scss";
 
 type Props = {};
 

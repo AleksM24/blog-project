@@ -1,18 +1,21 @@
 import { Typography } from "@mui/material";
+import AdventTitleDescription from "./advent-title-description/AdventTitleDescription"
 import "./AdventuresTitle.scss";
 import adventureIcon from "assets/adventure-icon.png";
+
 
 type Props = {};
 
 const AdventuresTitle = (props: Props) => {
   return (
-    <div>
+    <div className="title-section">
       <Typography>
-        <img className="advent-icon" src={adventureIcon}></img>
-        <span className="advent-title">Adventures</span>
-        <br />
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+        <section className="title-block">
+          <img className="advent-icon" src={adventureIcon}></img>
+          <span className="advent-title">Adventures</span>
+        </section>
       </Typography>
+      <AdventTitleDescription />
     </div>
   );
 };
