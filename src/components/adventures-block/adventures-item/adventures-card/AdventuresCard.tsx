@@ -1,8 +1,8 @@
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import CardFooter from "./card-footer/CardFooter";
 import "../adventures-card/AdventuresCard.scss";
 
 type Props = {};
@@ -20,6 +20,7 @@ const AdventuresCard = (props: Props) => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliquum.
           </Typography>
+          <CardFooter />
         </CardContent>
       </section>
     </Card>

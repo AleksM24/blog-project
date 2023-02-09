@@ -1,0 +1,41 @@
+.card-footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;    
+    border-top: 1px solid #DEDEDE;
+    margin-top: 20px;
+    padding: 20px 0 0;
+}
+
+.post-autor{
+    color: #ac8a62;
+    margin-right: 10px;
+}
+
+.user-icon{
+    position: relative;
+    top: 6px;
+    margin-right: 6px;
+    border-radius: 50%;
+}
+
+.data-section{
+    height: 31px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 2px;  
+}
+
+.clock-icon{
+    width: 15;
+    height: 15px;  
+    margin-right: 5px;       
+}
+
+.post-data{
+    color: #DEDEDE;
+    height: 19px;
+     
+}
