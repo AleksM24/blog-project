@@ -1,0 +1,28 @@
+.qoute-frame{
+    height: 458px;
+    width: 490px;
+    background: url("../../../assets/quotes-frame.png");
+    padding: 90px 49px 25px;
+    float: right;
+}
+
+.quote-text{
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 15px;
+}
+
+.autor-name{
+    height: 64px;
+    width: 384px;
+    background: url("../../../assets/autors-photo.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 0 0 0 75px;
+    background-size: contain;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    
+}
