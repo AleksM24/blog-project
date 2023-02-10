@@ -7,7 +7,7 @@ type Props = {};
 
 const Main = (props: Props) => {
   return (
-    <div className="wrapper">
+    <div className="adventures-wrapper">
       <Container
         sx={{
           padding: "50px 0",

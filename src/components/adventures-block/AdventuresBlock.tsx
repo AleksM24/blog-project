@@ -1,6 +1,7 @@
 import { Container, Grid } from "@mui/material";
 import AdventuresItem from "./adventures-item/AdventuresItem";
 import AdventuresTitle from "./adventures-title/AdventuresTitle";
+import "./../adventures-block/AdventuresBlock.scss";
 
 type Props = {};
 
@@ -27,6 +28,13 @@ const AdventuresBlock = (props: Props) => {
           </Grid>
         </Grid>
       </div>
+      <section className="discover-more-link">
+        <Container maxWidth="md">
+          <div className="wrap-discover-more">
+            <a className="text-discover" href="">Discover more</a>
+          </div>
+        </Container>
+      </section>
     </>
   );
 };
