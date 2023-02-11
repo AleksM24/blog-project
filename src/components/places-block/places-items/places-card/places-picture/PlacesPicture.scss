@@ -1,0 +1,20 @@
+.places-picture, .place-image{
+    height: 180px;
+    width: 272px;
+    position: relative;  
+}
+
+.likes-btn{
+position: absolute; 
+top: 20px;   
+right: 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #272727;
+border-radius: 20px; 
+padding: 5px 15px;
+color: white;
+cursor: pointer;
+}
+

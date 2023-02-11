@@ -4,7 +4,7 @@ type Props = {};
 
 const PlacesTitle = (props: Props) => {
   return (
-    <section className="title-block">
+    <section className="places-title-block">
       <div className="title-category">
         <div className="icon-places"></div>
         <div>
