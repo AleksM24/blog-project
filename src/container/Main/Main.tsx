@@ -1,6 +1,7 @@
 import { Container } from "@mui/material";
 import AdventuresBlock from "components/adventures-block/AdventuresBlock";
 import QuoteBlock from "../../components/quote-block/QuoteBlock";
+import PlacesBlock from "components/places-block/PlacesBlock";
 import Home from "pages/home/Home";
 import "./Main.scss";
 
@@ -21,6 +22,9 @@ const Main = (props: Props) => {
       </section>
       <section>
         <QuoteBlock />
+      </section>
+      <section className="places-wrapper">
+        <PlacesBlock />
       </section>
     </>
   );
