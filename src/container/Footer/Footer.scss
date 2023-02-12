@@ -1,0 +1,31 @@
+.footer-wrapper{
+   background-color: #363f36;
+   height: 84px;
+   border-top-color: rgba(255,255,255,0);
+}
+
+.footer-main-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content{
+    color: #d1d2d1;
+    display: flex;
+    align-items: center;    
+}
+
+.footer-main-section a {
+    text-decoration: none;
+    color: #ac8a62;
+    padding: 0 5px;
+}
+
+.copyright-text{
+    padding-left: 3px;
+}
+
+.angle-up{
+    color: #ac8a62;    
+}

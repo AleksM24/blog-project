@@ -1,4 +1,5 @@
 type Props = {};
+
 const GuidesTitle = (props: Props) => {
   return (
     <section className="places-title-block">

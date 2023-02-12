@@ -6,6 +6,7 @@ import Home from "pages/home/Home";
 import "./Main.scss";
 import GuidesBlock from "components/guides-block/GuidesBlock";
 import FinalSection from "components/final-section/FinalSection";
+import WidgetsBlock from "components/widgets-block/WidgetsBlock";
 
 type Props = {};
 
@@ -33,6 +34,10 @@ const Main = (props: Props) => {
       </section>
       <section className="about-us">
         <FinalSection />
+        <div className="main-gradient"></div>
+      </section>
+      <section className="widgets-wrapper">
+        <WidgetsBlock />
       </section>
     </>
   );

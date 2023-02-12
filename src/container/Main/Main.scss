@@ -1,6 +1,10 @@
 .adventures-wrapper{
     background: url('../../assets/home-grren-bg.png');
     height: 920px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
 }
 
 .places-wrapper{
@@ -17,4 +21,19 @@
 
 .about-us{
     background: url('../../assets/home-village.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.main-gradient{
+    background: url(../../assets/blogger-home-gradient.png);
+    height: 266px;
+}
+
+.widgets-wrapper{
+    height: 344px;
+    padding: 60px 0 50px;
+    background-color: #363f36;
+    border-top: 1px #504840 solid;
 }
