@@ -5,6 +5,7 @@ import Main from "../main/Main";
 import Footer from "../footer/Footer";
 import { ThemeProvider } from "@emotion/react";
 
+
 type Props = {};
 
 const theme = createTheme({
@@ -21,6 +22,7 @@ const App = (props: Props) => {
         <Header />
         <Main />
         <Footer />
+        
       </ThemeProvider>
     </StyledEngineProvider>
   );

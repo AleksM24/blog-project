@@ -1,6 +1,6 @@
 import { Instagram, Twitter } from "@mui/icons-material";
 import { Container } from "@mui/material";
-import "../widgets-block/WidgetsBlock.scss";
+import "./WidgetsBlock.scss";
 import FooterLogo from "assets/footer-logo.png";
 
 type Props = {};

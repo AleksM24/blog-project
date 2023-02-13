@@ -6,7 +6,7 @@ type Props = {};
 const GuidesPicture = (props: Props) => {
   return (
     <section className="places-picture">
-      <div>
+      <div className="image-wrap">
         <img className="place-image" src={GuidesImage} alt="PlacesImage" />
       </div>
       <div className="likes-btn">

@@ -1,8 +1,20 @@
 .places-picture, .place-image{
     height: 180px;
     width: 272px;
-    position: relative;  
+    position: relative; 
+    display: inline-block; 
+    overflow: hidden; 
 }
+
+.image-wrap img{
+    transition: 0.5s; 
+    display: block;
+}
+
+.image-wrap img:hover{    
+    transform: scale(1.2);        
+}
+
 
 .likes-btn{
 position: absolute; 

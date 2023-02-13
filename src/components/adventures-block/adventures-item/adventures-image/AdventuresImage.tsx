@@ -1,6 +1,6 @@
 import "./AdventuresImage.scss";
 import adventure1 from "assets/adventure1.jpg";
-import LikeIcon from "assets/LikeIcon.svg";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 type Props = {};
 
@@ -10,8 +10,8 @@ const AdventuresImage = (props: Props) => {
       <img className="adventure1" src={adventure1} alt="adventure1" />
       <div className="like-btn">
         <div className="like-wrapper">
-          <img className="like-icon" src={LikeIcon} alt="Like-icon" />
-          <span>55</span>
+          <FavoriteBorderIcon />
+          <span className="likes-counter">123</span>
         </div>
       </div>
     </div>
