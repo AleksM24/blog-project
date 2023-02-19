@@ -7,12 +7,14 @@ import "./Main.scss";
 import GuidesBlock from "components/guides-block/GuidesBlock";
 import FinalSection from "components/final-section/FinalSection";
 import WidgetsBlock from "container/footer/widgets-block/WidgetsBlock";
+import SwiperBlock from "components/swiper/SwiperBlock";
 
 type Props = {};
 
 const Main = (props: Props) => {
   return (
     <>
+      <SwiperBlock />
       <section className="adventures-wrapper">
         <Container
           sx={{
@@ -36,7 +38,6 @@ const Main = (props: Props) => {
         <FinalSection />
         <div className="main-gradient"></div>
       </section>
-      
     </>
   );
 };
