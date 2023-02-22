@@ -1,8 +1,8 @@
 import { Container } from "@mui/material";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 import KeyboardControlKeyIcon from "@mui/icons-material/KeyboardControlKey";
-import "../footer/Footer.scss";
-import WidgetsBlock from "./widgets-block/WidgetsBlock";
+import "./Footer.scss";
+import WidgetsBlock from "../Footer/widgets-block/WidgetsBlock";
 
 type Props = {};
 
