@@ -1,15 +1,12 @@
 import { createTheme, StyledEngineProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import Header from "../header/Header";
+import Header from "../Header/Header";
 import Main from "../main/Main";
 import Footer from "../footer/Footer";
 import { ThemeProvider } from "@emotion/react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "../../styles/base.scss";
-import { Pagination } from "swiper";
-import slider1 from "assets/slider1.jpg";
 
 type Props = {};
 

@@ -6,7 +6,6 @@ import Home from "pages/home/Home";
 import "./Main.scss";
 import GuidesBlock from "components/guides-block/GuidesBlock";
 import FinalSection from "components/final-section/FinalSection";
-import WidgetsBlock from "container/footer/widgets-block/WidgetsBlock";
 import SwiperBlock from "components/swiper/SwiperBlock";
 
 type Props = {};
@@ -16,10 +15,11 @@ const Main = (props: Props) => {
     <>
       <SwiperBlock />
       <section className="adventures-wrapper">
-        <Container
+        <Container className="adventures-container"
           sx={{
             padding: "50px 0",
           }}
+          maxWidth="md"
         >
           <Home />
           <AdventuresBlock />

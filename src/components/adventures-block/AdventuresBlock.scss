@@ -6,9 +6,9 @@
     font-size: 18px;    
     font-weight: 400;    
     color: white;       
-    height: 25px;
-    text-align: right;   
-    text-align: center;
+    height: 25px;  
+    display: flex;
+    justify-content: center;
 }
 
 .text-discover{

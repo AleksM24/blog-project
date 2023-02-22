@@ -4,7 +4,7 @@ type Props = {};
 
 const AdventTitleDescription = (props: Props) => {
   return (
-    <div>
+    <div className="main-advent-description">
       <span className="advent-description">
         Lorem ipsum dolor sit amet <br /> tetur adipis icing elit
       </span>
