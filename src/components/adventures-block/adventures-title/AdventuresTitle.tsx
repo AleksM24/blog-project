@@ -1,4 +1,3 @@
-import { Container, Typography } from "@mui/material";
 import AdventTitleDescription from "./advent-title-description/AdventTitleDescription";
 import "./AdventuresTitle.scss";
 import adventureIcon from "assets/adventure-icon.png";
@@ -10,7 +9,11 @@ const AdventuresTitle = (props: Props) => {
     <>
       <section className="title-section">
         <div className="main-block">
-          <img className="advent-icon" src={adventureIcon}></img>
+          <img
+            className="advent-icon"
+            src={adventureIcon}
+            alt="adventureIcon"
+          />
           <span className="advent-title">Adventures</span>
         </div>
       </section>

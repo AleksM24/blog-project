@@ -18,11 +18,11 @@ const WidgetsBlock = (props: Props) => {
           nulla molestiae voluptatum. Provident, dolorum? Sunt, earum odio?
         </p>
         <div className="social-networks-links">
-          <a className="instagram-link" href="">
+          <a className="instagram-link" href="https://www.instagram.com/">
             <Instagram></Instagram>
             <span>Instagram</span>
           </a>
-          <a className="twitter-link" href="">
+          <a className="twitter-link" href="https://twitter.com/">
             <Twitter></Twitter>
             <span>Twitter</span>
           </a>

@@ -16,7 +16,7 @@ const FinalSection = (props: Props) => {
           </h3>
           <div className="btn-wrapp">
             <div className="about-us-btn">
-              <a className="about-us-link" href="">
+              <a className="about-us-link" href="https://themes.muffingroup.com/be/blogger3/about/">
                 <strong>About Us</strong>
               </a>
             </div>

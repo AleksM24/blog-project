@@ -26,7 +26,10 @@ const AdventuresBlock = (props: Props) => {
       </Grid>
       <Container className="discover-more-link" maxWidth="md">
         <div className="wrap-discover-more">
-          <a className="text-discover" href="">
+          <a
+            className="text-discover"
+            href="https://themes.muffingroup.com/be/blogger3/category/adventures/"
+          >
             Discover more
           </a>
         </div>
