@@ -1,5 +1,4 @@
 import "./AdventuresImage.scss";
-import adventure1 from "assets/adventure1.jpg";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 type Props = {

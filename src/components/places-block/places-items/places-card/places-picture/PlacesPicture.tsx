@@ -1,12 +1,11 @@
 import "../places-picture/PlacesPicture.scss";
-import PlacesImage from "assets/blog-places-1.jpg";
 import LikeIcon from "assets/LikeIcon.svg";
 
 type Props = {
-  image: string
+  image: string;
 };
 
-const PlacesPicture = ({image}: Props) => {
+const PlacesPicture = ({ image }: Props) => {
   return (
     <section className="places-picture">
       <div className="image-wrap">
