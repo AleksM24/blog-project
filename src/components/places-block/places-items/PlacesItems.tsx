@@ -1,6 +1,7 @@
 import PlacesCard from "./places-card/PlacesCard";
 import "../places-items/PlacesItems.scss";
 import { Grid } from "@mui/material";
+import placesArray from "utils/placesArray";
 
 type Props = {};
 
@@ -14,15 +15,11 @@ const PlacesItems = (props: Props) => {
         alignItems="center"
         spacing={2}
       >
-        <Grid item>
-          <PlacesCard />
-        </Grid>
-        <Grid item>
-          <PlacesCard />
-        </Grid>
-        <Grid item>
-          <PlacesCard />
-        </Grid>
+        {placesArray.map(({ id, title, image }) => (
+          <Grid item key={id}>
+            <PlacesCard title={title} image={image} />
+          </Grid>
+        ))}
       </Grid>
     </>
   );

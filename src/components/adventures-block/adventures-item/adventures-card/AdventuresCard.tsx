@@ -5,20 +5,22 @@ import Typography from "@mui/material/Typography";
 import CardFooter from "./card-footer/CardFooter";
 import "../adventures-card/AdventuresCard.scss";
 
-type Props = {};
+type Props = {
+  title: string;
+  description: string;
+};
 
-const AdventuresCard = (props: Props) => {
+const AdventuresCard = ({ title, description }: Props) => {
   return (
     <Card className="adv-card" sx={{ maxWidth: 375 }}>
       <section className="card-wrap">
         <CardContent>
           <Button className="category-btn">Adventures</Button>
           <Typography className="card-title" variant="h2" component="div">
-            Donec tempor pur
+            {title}
           </Typography>
           <Typography className="card-text" variant="body2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliquum.
+            {description}
           </Typography>
           <CardFooter />
         </CardContent>

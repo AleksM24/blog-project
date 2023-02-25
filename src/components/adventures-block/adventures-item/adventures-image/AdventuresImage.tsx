@@ -2,12 +2,14 @@ import "./AdventuresImage.scss";
 import adventure1 from "assets/adventure1.jpg";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
-type Props = {};
+type Props = {
+  image: string;
+};
 
-const AdventuresImage = (props: Props) => {
+const AdventuresImage = ({ image }: Props) => {
   return (
     <div className="post-image">
-      <img className="adventure1" src={adventure1} alt="adventure1" />
+      <img className="adventure1" src={image} alt="adventure1" />
       <div className="like-btn">
         <div className="like-wrapper">
           <FavoriteBorderIcon />

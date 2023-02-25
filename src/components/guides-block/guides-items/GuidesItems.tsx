@@ -1,4 +1,5 @@
 import { Grid } from "@mui/material";
+import guidesArray from "utils/guidesArray";
 import GuideCard from "./guides-card/GuideCard";
 
 type Props = {};
@@ -13,15 +14,11 @@ const GuidesItems = (props: Props) => {
         alignItems="center"
         spacing={2}
       >
-        <Grid item>
-          <GuideCard />
-        </Grid>
-        <Grid item>
-          <GuideCard />
-        </Grid>
-        <Grid item>
-          <GuideCard />
-        </Grid>
+        {guidesArray.map(({ id, title, image }) => (
+          <Grid item key={id}>
+            <GuideCard title={title} image={image} />
+          </Grid>
+        ))}
       </Grid>
     </>
   );

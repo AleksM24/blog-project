@@ -1,13 +1,14 @@
-import GuidesImage from "assets/log-guides-1.jpg";
 import LikeIcon from "assets/LikeIcon.svg";
 
-type Props = {};
+type Props = {
+  image: string;
+};
 
-const GuidesPicture = (props: Props) => {
+const GuidesPicture = ({ image }: Props) => {
   return (
     <section className="places-picture">
       <div className="image-wrap">
-        <img className="place-image" src={GuidesImage} alt="PlacesImage" />
+        <img className="place-image" src={image} alt="PlacesImage" />
       </div>
       <div className="likes-btn">
         <img className="like-icon" src={LikeIcon} alt="LikeIcon" />

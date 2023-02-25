@@ -1,6 +1,8 @@
-type Props = {};
+type Props = {
+  title: string;
+};
 
-const GuidesDiscription = (props: Props) => {
+const GuidesDiscription = ({ title }: Props) => {
   return (
     <section>
       <a
@@ -9,7 +11,7 @@ const GuidesDiscription = (props: Props) => {
       >
         Guides
       </a>
-      <h2 className="description-text">Ut sodales nunc eu</h2>
+      <h2 className="description-text">{title}</h2>
     </section>
   );
 };

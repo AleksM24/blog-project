@@ -1,12 +1,19 @@
-import "../places-discription/PlacesDescription.scss"
+import "../places-discription/PlacesDescription.scss";
 
-type Props = {};
+type Props = {
+  title: string;
+};
 
-const PlacesDescription = (props: Props) => {
+const PlacesDescription = ({ title }: Props) => {
   return (
     <section>
-      <a className="places-categore-link" href="https://themes.muffingroup.com/be/blogger3/category/places/">Places</a> 
-      <h2 className="description-text">Nam tincidunt metus</h2> 
+      <a
+        className="places-categore-link"
+        href="https://themes.muffingroup.com/be/blogger3/category/places/"
+      >
+        Places
+      </a>
+      <h2 className="description-text">{title}</h2>
     </section>
   );
 };
