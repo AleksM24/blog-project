@@ -4,9 +4,15 @@
     font-weight: 300;
     text-transform: inherit;
     padding: 0 30px;
-    line-height: 76px;
+    line-height: 76px;    
 }
 
-.menu button:hover{
+.menu-btn-link {
+text-decoration: none;
+    color: white;
+}
+
+.menu-btn-link:hover{
     color: #ac8a62;
 }
+

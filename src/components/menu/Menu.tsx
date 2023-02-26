@@ -1,19 +1,32 @@
-import { Button } from "@mui/material"
-import "./Menu.scss"
+import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
+import "./Menu.scss";
 
-
-type Props = {}
+type Props = {};
 
 const Menu = (props: Props) => {
   return (
     <div className="menu">
-        <Button className="menu-btn" color="inherit">Home</Button>
-        <Button className="menu-btn" color="inherit">About</Button>
-        <Button className="menu-btn" color="inherit">Adventures</Button>
-        <Button className="menu-btn" color="inherit">Places</Button>
-        <Button className="menu-btn" color="inherit">Guides</Button>
-        <Button className="menu-btn" color="inherit">Favorites</Button>
+      <Button className="menu-btn" color="inherit">
+        <Link className="menu-btn-link" to={"/"}>Home</Link>
+      </Button>
+      <Button className="menu-btn" color="inherit">
+        <Link className="menu-btn-link" to={"/about"}>About</Link>
+      </Button>
+      <Button className="menu-btn" color="inherit">
+        <Link className="menu-btn-link" to={"/adventures"}>Adventures</Link>
+      </Button>
+      <Button className="menu-btn" color="inherit">
+        <Link className="menu-btn-link" to={"/places"}>Places</Link>
+      </Button>
+      <Button className="menu-btn" color="inherit">
+        <Link className="menu-btn-link" to={"/guides"}>Guides</Link>
+      </Button>
+      <Button className="menu-btn" color="inherit">
+        <Link className="menu-btn-link" to={"/favorites"}>Favorites</Link>
+      </Button>
     </div>
-  )
-}
-export default Menu
+  );
+};
+
+export default Menu;

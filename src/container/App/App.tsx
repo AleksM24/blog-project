@@ -1,12 +1,18 @@
 import { createTheme, StyledEngineProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Header from "../Header/Header";
-import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 import { ThemeProvider } from "@emotion/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "../../styles/base.scss";
+import { Route, Routes } from "react-router-dom";
+import Home from "pages/home/Home";
+import About from "pages/about/About";
+import Adventures from "pages/adventures/Adventures";
+import Places from "pages/places/Places";
+import Guides from "pages/guides/Guides";
+import Favorites from "pages/favorites/Favorites";
 
 type Props = {};
 
@@ -21,8 +27,15 @@ const App = (props: Props) => {
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Header />        
-        <Main />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="adventures" element={<Adventures />} />
+          <Route path="places" element={<Places />} />
+          <Route path="guides" element={<Guides />} />
+          <Route path="favorites" element={<Favorites />} />
+        </Routes>
         <Footer />
       </ThemeProvider>
     </StyledEngineProvider>

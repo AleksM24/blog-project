@@ -1,10 +1,10 @@
 import { Container } from "@mui/material";
-import "../final-section/FinalSection.scss";
+import "./DownSection.scss";
 import LocationIcon2 from "assets/location-icon2.png";
 
 type Props = {};
 
-const FinalSection = (props: Props) => {
+const DownSection = (props: Props) => {
   return (
     <Container maxWidth="md">
       <section>
@@ -16,7 +16,10 @@ const FinalSection = (props: Props) => {
           </h3>
           <div className="btn-wrapp">
             <div className="about-us-btn">
-              <a className="about-us-link" href="https://themes.muffingroup.com/be/blogger3/about/">
+              <a
+                className="about-us-link"
+                href="https://themes.muffingroup.com/be/blogger3/about/"
+              >
                 <strong>About Us</strong>
               </a>
             </div>
@@ -26,4 +29,5 @@ const FinalSection = (props: Props) => {
     </Container>
   );
 };
-export default FinalSection;
+
+export default DownSection;
