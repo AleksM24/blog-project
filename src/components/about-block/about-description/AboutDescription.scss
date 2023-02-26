@@ -1,0 +1,40 @@
+.about-description-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.about-description-left-block{
+    padding: 120px 8%;
+    background-color: rgb(72, 82, 70);
+    height: 572px;
+    width: 50%;
+    color: white;    
+}
+
+.about-description-icons img{
+    height: 21px;
+    width: 85px;
+}
+
+.about-description-title{
+    font-size: 38px;
+    line-height: 47px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-description-text{
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.about-description-right-block{
+    height: 572px;
+    width: 50%;
+    background-image: url('../../../assets/about-mountains.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

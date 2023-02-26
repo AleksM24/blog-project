@@ -1,8 +1,14 @@
-type Props = {}
+import AboutDescription from "components/about-block/about-description/AboutDescription";
+import AboutTitle from "components/about-block/about-title/AboutTitle";
+
+type Props = {};
 
 const About = (props: Props) => {
   return (
-    <div>About</div>
-  )
-}
-export default About
+    <>
+      <AboutTitle />
+      <AboutDescription />
+    </>
+  );
+};
+export default About;
