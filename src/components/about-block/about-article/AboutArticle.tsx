@@ -56,7 +56,7 @@ const AboutArticle = (props: Props) => {
             </div>
             <div className="article-autor">
               <div className="autor-photo">
-                <img src={AutorPhoto} alt="Photo" />
+                <img src={AutorPhoto} alt="AutorPhoto" />
               </div>
               <div className="article-autor-name">
                 <p>
