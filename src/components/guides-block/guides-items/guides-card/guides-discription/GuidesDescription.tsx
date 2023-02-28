@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 type Props = {
   title: string;
 };
@@ -5,12 +7,9 @@ type Props = {
 const GuidesDiscription = ({ title }: Props) => {
   return (
     <section>
-      <a
-        className="places-categore-link"
-        href="https://themes.muffingroup.com/be/blogger3/category/guides/"
-      >
+      <Link className="places-categore-link" to={"/guides"}>
         Guides
-      </a>
+      </Link>
       <h2 className="description-text">{title}</h2>
     </section>
   );

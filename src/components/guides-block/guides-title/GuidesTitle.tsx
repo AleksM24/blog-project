@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 type Props = {};
 
 const GuidesTitle = (props: Props) => {
@@ -6,7 +8,9 @@ const GuidesTitle = (props: Props) => {
       <div className="title-category">
         <div className="icon-places"></div>
         <div>
-          <span className="name-categore">Guides</span>
+          <Link className="name-categore" to={"/guides"}>
+            Guides
+          </Link>
         </div>
       </div>
       <div className="title-description">

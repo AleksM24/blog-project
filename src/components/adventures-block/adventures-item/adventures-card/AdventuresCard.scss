@@ -14,9 +14,13 @@
     text-transform: inherit;
     background-color: rgba(255,255,255,.1);
     padding: 0 10px 0 10px;
-    border-radius: 20px;
+    border-radius: 20px;    
+    margin-bottom: 10px;  
+}
+
+.category-btn-link{
+    text-decoration: none;
     color: rgba(255,255,255,.8);
-    margin-bottom: 10px;
 }
 
 .card-title{

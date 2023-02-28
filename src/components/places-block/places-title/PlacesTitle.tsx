@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../places-title/PlacesTitle.scss";
 
 type Props = {};
@@ -8,7 +9,9 @@ const PlacesTitle = (props: Props) => {
       <div className="title-category">
         <div className="icon-places"></div>
         <div>
-          <span className="name-categore">Places</span>
+          <Link className="name-categore" to="/places">
+            Places
+          </Link>
         </div>
       </div>
       <div className="title-description">

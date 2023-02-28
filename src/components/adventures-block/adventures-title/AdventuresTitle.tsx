@@ -1,6 +1,7 @@
 import AdventTitleDescription from "./advent-title-description/AdventTitleDescription";
 import "./AdventuresTitle.scss";
 import adventureIcon from "assets/adventure-icon.png";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -14,7 +15,9 @@ const AdventuresTitle = (props: Props) => {
             src={adventureIcon}
             alt="adventureIcon"
           />
-          <span className="advent-title">Adventures</span>
+          <Link className="advent-title" to={"/adventures"}>
+            Adventures
+          </Link>
         </div>
       </section>
       <AdventTitleDescription />

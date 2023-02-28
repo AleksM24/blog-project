@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../places-discription/PlacesDescription.scss";
 
 type Props = {
@@ -7,12 +8,9 @@ type Props = {
 const PlacesDescription = ({ title }: Props) => {
   return (
     <section>
-      <a
-        className="places-categore-link"
-        href="https://themes.muffingroup.com/be/blogger3/category/places/"
-      >
+      <Link className="places-categore-link" to={"/places"}>
         Places
-      </a>
+      </Link>
       <h2 className="description-text">{title}</h2>
     </section>
   );
