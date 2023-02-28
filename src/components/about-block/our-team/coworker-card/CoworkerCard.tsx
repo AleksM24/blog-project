@@ -15,7 +15,7 @@ const CoworkerCard = ({ id, photo, name, position }: Props) => {
     <section className="coworker-card">
       <div className="photo-frame">
         <div className="image-wrapper">
-          <img src={photo} alt="user-photo" />
+          <img src={photo} alt="UserPhoto" />
         </div>
       </div>
       <div className="desc-wrapper">
