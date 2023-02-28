@@ -27,7 +27,7 @@
     font-size: 15px;
     line-height: 27px;
     font-weight: 400;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .about-description-right-block{
@@ -37,4 +37,14 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+.about-discover-more{
+    border-bottom: 1px solid #ac8a62;
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;    
 }

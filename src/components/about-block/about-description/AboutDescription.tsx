@@ -17,7 +17,9 @@ const AboutDescription = (props: Props) => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labor
         </p>
-        <a href="/">Discover more</a>
+        <a className="about-discover-more" href="/">
+          Discover more
+        </a>
       </div>
       <div className="about-description-right-block"></div>
     </section>

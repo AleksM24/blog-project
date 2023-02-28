@@ -1,6 +1,7 @@
 import { Container } from "@mui/material";
 import "./DownSection.scss";
 import LocationIcon2 from "assets/location-icon2.png";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -15,14 +16,11 @@ const DownSection = (props: Props) => {
             Lorem ipsum, dolor sit amet <br /> consectetur adipisicing elit
           </h3>
           <div className="btn-wrapp">
-            <div className="about-us-btn">
-              <a
-                className="about-us-link"
-                href="https://themes.muffingroup.com/be/blogger3/about/"
-              >
-                <strong>About Us</strong>
-              </a>
-            </div>
+            <button className="about-us-btn">
+              <Link className="about-us-link" to={"/about"}>
+                About Us
+              </Link>
+            </button>
           </div>
         </div>
       </section>

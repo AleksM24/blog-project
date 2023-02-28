@@ -1,0 +1,47 @@
+.about-article-wrapper{
+    padding-bottom: 130px;
+    background-color: #e2e0dc;
+}
+
+.left-side-article, .right-side-article{
+    margin: 0 20px 0 20px;
+}
+
+.article-image img{
+    width: 380px;
+    height: 380px;
+}
+
+.article-image{
+    margin-bottom: 60px;
+}
+
+.article-column{
+    display: flex;
+    justify-content: center;
+}
+
+.article-title{
+    font-size: 38px;
+    line-height: 47px;
+    font-weight: 700;
+    color: #ac8a63;
+}
+
+.autor-quote{
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 700;
+    color: #504840;
+    margin-bottom: 40px;    
+}
+
+.article-autor{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.autor-photo img{
+    margin-right: 10px;
+}
