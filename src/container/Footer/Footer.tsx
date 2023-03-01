@@ -23,7 +23,7 @@ const Footer = (props: Props) => {
               <a href="https://wordpress.org/">WordPress</a>
             </div>
             <div className="angle-up">
-              <a href="https://themes.muffingroup.com/be/blogger3/">
+              <a href="/">
                 <KeyboardControlKeyIcon fontSize="large" />
               </a>
             </div>

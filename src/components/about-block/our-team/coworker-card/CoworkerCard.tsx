@@ -20,7 +20,7 @@ const CoworkerCard = ({ id, photo, name, position }: Props) => {
       </div>
       <div className="desc-wrapper">
         <h4 className="coworker-name">{name}</h4>
-        <p className="subtitle">{position}</p>
+        <p className="staff-subtitle">{position}</p>
         <hr className="hr-color" />
         <p className="coworker-desc">
           Vitae adipiscing turpis. Aenean ligula nibh, molest ie id viverra a,
