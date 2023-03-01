@@ -1,4 +1,3 @@
-import { Container } from "@mui/material";
 import AdventuresBlock from "components/adventures-block/AdventuresBlock";
 import DownSection from "components/down-section/DownSection";
 import GuidesBlock from "components/guides-block/GuidesBlock";
