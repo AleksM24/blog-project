@@ -14,15 +14,7 @@ const Home = (props: Props) => {
     <>
       <SwiperBlock />
       <section className="adventures-wrapper">
-        <Container
-          className="adventures-container"
-          sx={{
-            padding: "50px 0",
-          }}
-          maxWidth="md"
-        >
-          <AdventuresBlock />
-        </Container>
+        <AdventuresBlock />
       </section>
       <section>
         <QuoteBlock />

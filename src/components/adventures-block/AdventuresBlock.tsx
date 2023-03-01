@@ -9,18 +9,18 @@ type Props = {};
 
 const AdventuresBlock = (props: Props) => {
   return (
-    <>
-      <Container className="adventure-title" maxWidth="md">
+    <Container maxWidth="md">
+      <section className="adventure-title">
         <AdventuresTitle />
-      </Container>
+      </section>
       <Grid
         container
         direction="row"
-        justifyContent="space-between"
+        justifyContent="flex-start"
         alignItems="center"
       >
         {adventuresArray.map(({ id, title, description, image }, i) => (
-          <Grid item xs={12} sm={6} md={4} key={id}>
+          <Grid item key={id}>
             <AdventuresItem
               title={title}
               description={description}
@@ -36,7 +36,7 @@ const AdventuresBlock = (props: Props) => {
           </Link>
         </div>
       </Container>
-    </>
+    </Container>
   );
 };
 export default AdventuresBlock;

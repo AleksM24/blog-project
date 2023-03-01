@@ -1,8 +1,9 @@
 .advent-item{
     height: 530px;
-    width: 425px;    
-    position: relative;    
+    width: 415px;    
+    position: relative;   
+    margin: 5px; 
     display: flex;
-    justify-content: center;
-    padding: 0 20px 0 20px;
+    flex-direction: column;
+    align-items: center;
 }

@@ -10,7 +10,7 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <AppBar position="static" className="app-bar">
+    <AppBar position="sticky" className="app-bar">
       <Container maxWidth="xl">
         <Toolbar className="toolbar">
           <Logo />
