@@ -6,13 +6,14 @@ import { ThemeProvider } from "@emotion/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "../../styles/base.scss";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "pages/home/Home";
 import About from "pages/about/About";
 import Adventures from "pages/adventures/Adventures";
 import Places from "pages/places/Places";
 import Guides from "pages/guides/Guides";
 import Favorites from "pages/favorites/Favorites";
+import { useEffect } from "react";
 
 type Props = {};
 
@@ -23,11 +24,20 @@ const theme = createTheme({
 });
 
 const App = (props: Props) => {
+  const ScrollToTop = () => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+    return null;
+  };
+
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Header />
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
