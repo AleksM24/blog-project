@@ -12,7 +12,6 @@ const AdventuresImage = ({ image }: Props) => {
       <div className="like-btn">
         <div className="like-wrapper">
           <FavoriteBorderIcon />
-          <span className="likes-counter">123</span>
         </div>
       </div>
     </div>

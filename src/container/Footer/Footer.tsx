@@ -3,6 +3,7 @@ import CopyrightIcon from "@mui/icons-material/Copyright";
 import KeyboardControlKeyIcon from "@mui/icons-material/KeyboardControlKey";
 import "./Footer.scss";
 import WidgetsBlock from "../Footer/widgets-block/WidgetsBlock";
+import ScrollToUp from "container/App/ScrollToUp";
 
 type Props = {};
 
@@ -22,9 +23,7 @@ const Footer = (props: Props) => {
               <p> | All Rights Reserved | Powered by </p>
               <a href="https://wordpress.org/">WordPress</a>
             </div>
-            <div className="angle-up">
-              <KeyboardControlKeyIcon fontSize="large" />
-            </div>
+            <ScrollToUp />
           </div>
         </Container>
       </section>

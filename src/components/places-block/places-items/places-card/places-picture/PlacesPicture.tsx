@@ -13,7 +13,6 @@ const PlacesPicture = ({ image }: Props) => {
       </div>
       <div className="likes-btn">
         <img className="like-icon" src={LikeIcon} alt="LikeIcon" />
-        <span>124</span>
       </div>
     </section>
   );

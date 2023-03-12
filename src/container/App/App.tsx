@@ -14,6 +14,8 @@ import Places from "pages/places/Places";
 import Guides from "pages/guides/Guides";
 import Favorites from "pages/favorites/Favorites";
 import { useEffect } from "react";
+import "./App.scss";
+import ScrollToUp from "./ScrollToUp";
 
 type Props = {};
 
@@ -37,7 +39,7 @@ const App = (props: Props) => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Header />
-        <ScrollToTop/>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />

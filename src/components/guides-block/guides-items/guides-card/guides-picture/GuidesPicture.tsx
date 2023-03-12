@@ -12,7 +12,6 @@ const GuidesPicture = ({ image }: Props) => {
       </div>
       <div className="likes-btn">
         <img className="like-icon" src={LikeIcon} alt="LikeIcon" />
-        <span>225</span>
       </div>
     </section>
   );

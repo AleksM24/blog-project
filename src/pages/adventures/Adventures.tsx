@@ -1,5 +1,6 @@
 import { Grid } from "@mui/material";
 import { Container } from "@mui/system";
+import AdventuresImage from "components/adventures-block/adventures-item/adventures-image/AdventuresImage";
 import AdventuresItem from "components/adventures-block/adventures-item/AdventuresItem";
 import adventuresArray from "utils/adventuresArray";
 import "./Adventures.scss";
@@ -23,11 +24,7 @@ const Adventures = (props: Props) => {
           >
             {adventuresArray.map(({ id, title, description, image }, i) => (
               <Grid item key={id}>
-                <AdventuresItem
-                  title={title}
-                  description={description}
-                  image={image}
-                />
+                <AdventuresImage image={image} />
               </Grid>
             ))}
           </Grid>
