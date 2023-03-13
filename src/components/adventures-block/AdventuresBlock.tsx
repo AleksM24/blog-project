@@ -25,6 +25,7 @@ const AdventuresBlock = (props: Props) => {
               title={title}
               description={description}
               image={image}
+              id= {id}
             />
           </Grid>
         ))}

@@ -24,7 +24,7 @@ const Adventures = (props: Props) => {
           >
             {adventuresArray.map(({ id, title, description, image }, i) => (
               <Grid item key={id}>
-                <AdventuresImage image={image} />
+                <AdventuresImage image={image} id={id} />
               </Grid>
             ))}
           </Grid>

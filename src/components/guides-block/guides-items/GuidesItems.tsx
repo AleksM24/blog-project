@@ -16,7 +16,7 @@ const GuidesItems = (props: Props) => {
       >
         {guidesArray.map(({ id, title, image }) => (
           <Grid item key={id}>
-            <GuideCard title={title} image={image} />
+            <GuideCard title={title} image={image} id={id} />
           </Grid>
         ))}
       </Grid>

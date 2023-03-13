@@ -6,12 +6,13 @@ type Props = {
   title: string;
   description: string;
   image: string;
+  id: number;
 };
 
-const AdventuresItem = ({ title, description, image }: Props) => {
+const AdventuresItem = ({ title, description, image, id }: Props) => {
   return (
     <section className="advent-item">
-      <AdventuresImage image={image} />
+      <AdventuresImage image={image} id={id} />
       <AdventuresCard title={title} description={description} />
     </section>
   );

@@ -17,7 +17,7 @@ const PlacesItems = (props: Props) => {
       >
         {placesArray.map(({ id, title, image }) => (
           <Grid item key={id}>
-            <PlacesCard title={title} image={image} />
+            <PlacesCard title={title} image={image} id={id} />
           </Grid>
         ))}
       </Grid>

@@ -6,12 +6,13 @@ import "../places-card/PlacesCard.scss";
 type Props = {
   image: string;
   title: string;
+  id: number;
 };
 
-const PlacesCard = ({ image, title }: Props) => {
+const PlacesCard = ({ image, title, id }: Props) => {
   return (
     <section className="places-card">
-      <PlacesPicture image={image} />
+      <PlacesPicture image={image} id={id} />
       <div className="places-card-wrapper">
         <PlacesDescription title={title} />
         <PlacesFooter />
