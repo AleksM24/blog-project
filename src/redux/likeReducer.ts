@@ -4,17 +4,23 @@ type likeProductsType = {
   [id: number]: boolean;
 };
 
-export const initialState: likeProductsType = {
-  1: true,
-  2: false,
-  4: true,
-  6: true,
-};
+export const initialState: likeProductsType = {};
 
 export const LikeSlice = createSlice({
   name: "like",
   initialState,
-  reducers: {},
+  reducers: {
+    addLike: (state, action) => ({
+      ...state,
+      [action.payload]: true,
+    }),
+    removeLike: (state, action) => ({
+      ...state,
+      [action.payload]: false,
+    }),
+  },
 });
+
+export const { addLike, removeLike } = LikeSlice.actions;
 
 export default LikeSlice.reducer;

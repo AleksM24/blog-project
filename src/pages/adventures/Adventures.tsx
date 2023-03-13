@@ -1,7 +1,6 @@
 import { Grid } from "@mui/material";
 import { Container } from "@mui/system";
 import AdventuresImage from "components/adventures-block/adventures-item/adventures-image/AdventuresImage";
-import AdventuresItem from "components/adventures-block/adventures-item/AdventuresItem";
 import adventuresArray from "utils/adventuresArray";
 import "./Adventures.scss";
 
