@@ -15,7 +15,6 @@ import Guides from "pages/guides/Guides";
 import Favorites from "pages/favorites/Favorites";
 import { useEffect } from "react";
 import "./App.scss";
-import ScrollToUp from "./ScrollToUp";
 
 type Props = {};
 

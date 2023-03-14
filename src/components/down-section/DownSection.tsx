@@ -1,8 +1,7 @@
 import { Container } from "@mui/material";
 import "./DownSection.scss";
 import LocationIcon2 from "assets/location-icon2.png";
-import { Link, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 type Props = {};
 

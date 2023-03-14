@@ -1,7 +1,6 @@
 import "./Menu.scss";
 import MenuItem from "./MenuItem";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { Margin } from "@mui/icons-material";
 
 type Props = {};
 
