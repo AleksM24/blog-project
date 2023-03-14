@@ -3,13 +3,14 @@
     font-size: 17px;
     font-weight: 300;
     text-transform: inherit;
-    padding: 0 30px;
-    line-height: 76px;    
+    padding: 0 30px;     
 }
 
 .menu-btn-link {
 text-decoration: none;
     color: white;
+    display: flex;
+    text-align: center;   
 }
 
 .menu-btn-link:hover{

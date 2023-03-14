@@ -17,4 +17,5 @@ const AdventuresItem = ({ title, description, image, id }: Props) => {
     </section>
   );
 };
+
 export default AdventuresItem;

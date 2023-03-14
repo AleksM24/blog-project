@@ -1,10 +1,12 @@
 import { Grid } from "@mui/material";
 import { Container } from "@mui/system";
+import AdventuresCard from "components/adventures-block/adventures-item/adventures-card/AdventuresCard";
 import AdventuresImage from "components/adventures-block/adventures-item/adventures-image/AdventuresImage";
 import adventuresArray from "utils/adventuresArray";
 import "./Adventures.scss";
 
 type Props = {};
+
 const Adventures = (props: Props) => {
   return (
     <>
@@ -23,13 +25,18 @@ const Adventures = (props: Props) => {
           >
             {adventuresArray.map(({ id, title, description, image }, i) => (
               <Grid item key={id}>
-                <AdventuresImage image={image} id={id} />
+                <section className="advent-item">
+                  <AdventuresImage image={image} id={id} />
+                  <AdventuresCard title={title} description={description} />
+                </section>
               </Grid>
             ))}
+            ;
           </Grid>
         </Container>
       </section>
     </>
   );
 };
+
 export default Adventures;
