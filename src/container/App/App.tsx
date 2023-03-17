@@ -15,6 +15,9 @@ import Guides from "pages/guides/Guides";
 import Favorites from "pages/favorites/Favorites";
 import { useEffect } from "react";
 import "./App.scss";
+import AdventPostPage from "pages/posts/AdventPostPage";
+import GuidesPostPage from "pages/posts/GuidesPostPage";
+import PlacesPostPage from "pages/posts/PlacesPostPage";
 
 type Props = {};
 
@@ -46,6 +49,9 @@ const App = (props: Props) => {
           <Route path="places" element={<Places />} />
           <Route path="guides" element={<Guides />} />
           <Route path="favorites" element={<Favorites />} />
+          <Route path="/adventuresPosts/:id" element={<AdventPostPage />} />
+          <Route path="/placesPosts/:id" element={<PlacesPostPage />} />
+          <Route path="/guidesPosts/:id" element={<GuidesPostPage />} />
         </Routes>
         <Footer />
       </ThemeProvider>

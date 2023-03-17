@@ -9,9 +9,10 @@ import { Link } from "react-router-dom";
 type Props = {
   title: string;
   description: string;
+  id: number;
 };
 
-const AdventuresCard = ({ title, description }: Props) => {
+const AdventuresCard = ({ title, description, id }: Props) => {
   return (
     <Card className="adv-card" sx={{ maxWidth: 375 }}>
       <section className="card-wrap">
@@ -22,7 +23,12 @@ const AdventuresCard = ({ title, description }: Props) => {
             </Link>
           </Button>
           <Typography className="card-title" variant="h2" component="div">
-            {title}
+            <Link
+              className="adventures-posts-link"
+              to={`/adventuresPosts/${id}`}
+            >
+              {title}
+            </Link>
           </Typography>
           <Typography className="card-text" variant="body2">
             {description}

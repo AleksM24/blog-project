@@ -3,15 +3,18 @@ import "../places-discription/PlacesDescription.scss";
 
 type Props = {
   title: string;
+  id: number;
 };
 
-const PlacesDescription = ({ title }: Props) => {
+const PlacesDescription = ({ title, id }: Props) => {
   return (
     <section>
       <Link className="places-categore-link" to={"/places"}>
         Places
       </Link>
-      <h2 className="description-text">{title}</h2>
+      <Link className="places-title-link" to={`/placesPosts/${id}`}>
+        <h2 className="description-text">{title}</h2>
+      </Link>
     </section>
   );
 };

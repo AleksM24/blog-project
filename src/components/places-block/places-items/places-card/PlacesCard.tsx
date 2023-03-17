@@ -14,7 +14,7 @@ const PlacesCard = ({ image, title, id }: Props) => {
     <section className="places-card">
       <PlacesPicture image={image} id={id} />
       <div className="places-card-wrapper">
-        <PlacesDescription title={title} />
+        <PlacesDescription title={title} id={id} />
         <PlacesFooter />
       </div>
     </section>

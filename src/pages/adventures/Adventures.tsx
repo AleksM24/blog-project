@@ -19,7 +19,7 @@ const Adventures = (props: Props) => {
         <Container maxWidth="md">
           <Grid
             container
-            direction="column"
+            direction="row"
             justifyContent="flex-start"
             alignItems="center"
           >
@@ -27,7 +27,11 @@ const Adventures = (props: Props) => {
               <Grid item key={id}>
                 <section className="advent-item">
                   <AdventuresImage image={image} id={id} />
-                  <AdventuresCard title={title} description={description} />
+                  <AdventuresCard
+                    title={title}
+                    description={description}
+                    id={id}
+                  />
                 </section>
               </Grid>
             ))}

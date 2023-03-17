@@ -3,6 +3,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useAppDispatch, useAppSelector } from "redux/hooks";
 import { addLike, removeLike } from "redux/likeReducer";
+import { Link } from "react-router-dom";
 
 type Props = {
   image: string;
@@ -14,8 +15,10 @@ const AdventuresImage = ({ image, id }: Props) => {
   const dispatch = useAppDispatch();
 
   return (
-    <div className="post-image">
-      <img className="adventure1" src={image} alt="adventure1" />
+    <div className="post-images">
+      <Link className="adventures-posts-link" to={`/adventuresPosts/${id}`}>
+        <img className="adventure1" src={image} alt="adventure1" />
+      </Link>
       <div className="like-btn">
         <div
           className="like-wrapper"

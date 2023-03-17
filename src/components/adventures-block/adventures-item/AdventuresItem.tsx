@@ -13,7 +13,7 @@ const AdventuresItem = ({ title, description, image, id }: Props) => {
   return (
     <section className="advent-item">
       <AdventuresImage image={image} id={id} />
-      <AdventuresCard title={title} description={description} />
+      <AdventuresCard title={title} description={description} id={id} />
     </section>
   );
 };
