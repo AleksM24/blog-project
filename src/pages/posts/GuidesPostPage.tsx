@@ -17,7 +17,7 @@ const PostPage = ({ postsObject = getPostsObject(guidesArray) }: Props) => {
         <img
           className="post-image"
           src={postsObject[parseInt(id!)].image}
-          alt="post-image"
+          alt="guides-post"
         />
         <h2 className="post-title">
           {postsObject[parseInt(id!)].title}
