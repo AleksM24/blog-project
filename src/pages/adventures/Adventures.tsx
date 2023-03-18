@@ -5,9 +5,9 @@ import AdventuresImage from "components/adventures-block/adventures-item/adventu
 import adventuresArray from "utils/adventuresArray";
 import "./Adventures.scss";
 
-type Props = {};
+type Props = { changePostCount: (count: number) => void };
 
-const Adventures = (props: Props) => {
+const Adventures = ({ changePostCount }: Props) => {
   return (
     <>
       <div className="subtitle-wrapper">
@@ -26,7 +26,11 @@ const Adventures = (props: Props) => {
             {adventuresArray.map(({ id, title, description, image }, i) => (
               <Grid item key={id}>
                 <section className="advent-item">
-                  <AdventuresImage image={image} id={id} />
+                  <AdventuresImage
+                    image={image}
+                    id={id}
+                    changePostCount={changePostCount}
+                  />
                   <AdventuresCard
                     title={title}
                     description={description}

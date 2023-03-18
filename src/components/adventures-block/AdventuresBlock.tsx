@@ -5,9 +5,9 @@ import "./../adventures-block/AdventuresBlock.scss";
 import adventuresArray from "utils/adventuresArray";
 import { Link } from "react-router-dom";
 
-type Props = {};
+type Props = { changePostCount: (count: number) => void };
 
-const AdventuresBlock = (props: Props) => {
+const AdventuresBlock = ({ changePostCount }: Props) => {
   return (
     <Container maxWidth="md">
       <section className="adventure-title">
@@ -25,7 +25,8 @@ const AdventuresBlock = (props: Props) => {
               title={title}
               description={description}
               image={image}
-              id= {id}
+              id={id}
+              changePostCount={changePostCount}
             />
           </Grid>
         ))}

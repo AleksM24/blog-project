@@ -13,13 +13,17 @@ import Adventures from "pages/adventures/Adventures";
 import Places from "pages/places/Places";
 import Guides from "pages/guides/Guides";
 import Favorites from "pages/favorites/Favorites";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.scss";
 import AdventPostPage from "pages/posts/AdventPostPage";
 import GuidesPostPage from "pages/posts/GuidesPostPage";
 import PlacesPostPage from "pages/posts/PlacesPostPage";
 
 type Props = {};
+
+type FavorDataProps = {
+  totalCount: number;
+};
 
 const theme = createTheme({
   typography: {
@@ -36,16 +40,47 @@ const App = (props: Props) => {
     return null;
   };
 
+  const [favorData, setFavorData] = useState<FavorDataProps>({
+    totalCount: 0,
+  });
+
+  const changePostCount = (count: number) => {
+    setFavorData((prevState) => ({
+      totalCount: prevState.totalCount + count,
+    }));
+  };
+
+  // const [postsInFavorites, setPostsInFavorites] = useState<PostsInFavorites>({
+  //   1: 25,
+  //   2: 50,
+  // });
+
+  // const addPostToFavorites = (id: number) => {
+  //   setPostsInFavorites(() => ({
+  //     [id]: id,
+  //   }));
+  // };
+
+  // const removePostFromFavorites = () => {
+  //   setPostsInFavorites(() => ({}));
+  // };
+
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Header />
+        <Header favorData={favorData} />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={<Home changePostCount={changePostCount} />}
+          />
           <Route path="about" element={<About />} />
-          <Route path="adventures" element={<Adventures />} />
+          <Route
+            path="adventures"
+            element={<Adventures changePostCount={changePostCount} />}
+          />
           <Route path="places" element={<Places />} />
           <Route path="guides" element={<Guides />} />
           <Route path="favorites" element={<Favorites />} />

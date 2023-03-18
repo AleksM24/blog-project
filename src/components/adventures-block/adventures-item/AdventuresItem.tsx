@@ -7,12 +7,23 @@ type Props = {
   description: string;
   image: string;
   id: number;
+  changePostCount: (count: number) => void;
 };
 
-const AdventuresItem = ({ title, description, image, id }: Props) => {
+const AdventuresItem = ({
+  title,
+  description,
+  image,
+  id,
+  changePostCount,
+}: Props) => {
   return (
     <section className="advent-item">
-      <AdventuresImage image={image} id={id} />
+      <AdventuresImage
+        image={image}
+        id={id}
+        changePostCount={changePostCount}
+      />
       <AdventuresCard title={title} description={description} id={id} />
     </section>
   );
