@@ -8,7 +8,7 @@ type Props = {
   category: string;
 };
 
-const GuidesDiscription = ({ title, id, ctg, category }: Props) => {
+const GuidesDiscription = ({ title, id, category }: Props) => {
   return (
     <section>
       <Link className="places-categore-link" to={"/guides/"}>
