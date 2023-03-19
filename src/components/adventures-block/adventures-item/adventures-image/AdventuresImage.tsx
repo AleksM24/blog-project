@@ -1,4 +1,4 @@
-import "./AdventuresImage.scss";
+import "../adventures-image/AdventuresImage.scss";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useAppDispatch, useAppSelector } from "redux/hooks";
@@ -15,7 +15,7 @@ const AdventuresImage = ({ image, id }: Props) => {
   const dispatch = useAppDispatch();
 
   return (
-    <div className="post-images">
+    <div className="post-image">
       <Link className="adventures-posts-link" to={`/adventuresPosts/${id}`}>
         <img className="adventure1" src={image} alt="adventure1" />
       </Link>

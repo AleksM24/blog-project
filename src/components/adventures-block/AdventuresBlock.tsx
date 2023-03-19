@@ -19,16 +19,20 @@ const AdventuresBlock = (props: Props) => {
         justifyContent="flex-start"
         alignItems="center"
       >
-        {adventuresArray.map(({ id, title, description, image }, i) => (
-          <Grid item key={id}>
-            <AdventuresItem
-              title={title}
-              description={description}
-              image={image}
-              id= {id}
-            />
-          </Grid>
-        ))}
+        {adventuresArray.map(
+          ({ id, title, category, description, image, ctg }, i) => (
+            <Grid item key={id}>
+              <AdventuresItem
+                ctg={ctg}
+                category={category}
+                title={title}
+                description={description}
+                image={image}
+                id={id}
+              />
+            </Grid>
+          )
+        )}
       </Grid>
       <Container className="discover-more-link" maxWidth="md">
         <div className="wrap-discover-more">

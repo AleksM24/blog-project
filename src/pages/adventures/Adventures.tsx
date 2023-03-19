@@ -23,18 +23,22 @@ const Adventures = (props: Props) => {
             justifyContent="flex-start"
             alignItems="center"
           >
-            {adventuresArray.map(({ id, title, description, image }, i) => (
-              <Grid item key={id}>
-                <section className="advent-item">
-                  <AdventuresImage image={image} id={id} />
-                  <AdventuresCard
-                    title={title}
-                    description={description}
-                    id={id}
-                  />
-                </section>
-              </Grid>
-            ))}
+            {adventuresArray.map(
+              ({ id, title, category, description, image, ctg }, i) => (
+                <Grid item key={id}>
+                  <section className="advent-item">
+                    <AdventuresImage image={image} id={id} />
+                    <AdventuresCard
+                      ctg={ctg}
+                      category={category}
+                      title={title}
+                      description={description}
+                      id={id}
+                    />
+                  </section>
+                </Grid>
+              )
+            )}
             ;
           </Grid>
         </Container>

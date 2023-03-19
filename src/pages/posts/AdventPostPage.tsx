@@ -1,25 +1,25 @@
 import { Container } from "@mui/material";
 import { useParams } from "react-router";
-import adventuresArray, {
-  AdventuresPost,
+import postsArray, {
+  BlogPost,
   getPostsObject,
-} from "utils/adventuresArray";
+} from "utils/postsArray";
 import "./AdventPostPage.scss";
 import CollageImage from "assets/blogger-single-gallery.jpg";
 
 type Props = {
   postsObject?: {
-    [id: number]: AdventuresPost;
+    [id: number]: BlogPost;
   };
 };
 
-const PostPage = ({ postsObject = getPostsObject(adventuresArray) }: Props) => {
+const PostPage = ({ postsObject = getPostsObject(postsArray) }: Props) => {
   const { id } = useParams();
   return (
     <div className="post-wrapper">
       <div className="img-container">
         <img
-          className="post-image"
+          className="posts-image"
           src={postsObject[parseInt(id!)].image}
           alt="adventure1"
         />

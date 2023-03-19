@@ -5,11 +5,15 @@ export type AdventuresPost = {
   image: string;
   postFirstText: string;
   postSecondText: string;
+  category: string;
+  ctg: string;
 };
 
 const adventuresArray: AdventuresPost[] = [
   {
     id: 1,
+    ctg: "adv",
+    category: "Adventures",
     title: "Donec tempor pur",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquum.",
@@ -21,6 +25,8 @@ const adventuresArray: AdventuresPost[] = [
   },
   {
     id: 2,
+    ctg: "adv",
+    category: "Adventures",
     title: "Fusce nec orcio",
     description:
       "Ipsum dolor sit amet consectetur adipisicing elit. Quae, nisi. Id ipsa, nesciunt, nobis deserunt quis quisquam optio eum saepe.",
@@ -34,9 +40,9 @@ const adventuresArray: AdventuresPost[] = [
 
 export const getPostsObject = (array: AdventuresPost[]) =>
   array.reduce(
-    (object, adventuresPost) => ({
+    (object, blogsPost) => ({
       ...object,
-      [adventuresPost.id]: adventuresPost,
+      [blogsPost.id]: blogsPost,
     }),
     {}
   );
