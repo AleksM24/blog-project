@@ -8,10 +8,9 @@ import { Link } from "react-router-dom";
 type Props = {
   image: string;
   id: number;
- 
 };
 
-const AdventuresImage = ({ image, id,  }: Props) => {
+const AdventuresImage = ({ image, id }: Props) => {
   const isLiked = useAppSelector((state) => state.productsLikeState[id]);
   const dispatch = useAppDispatch();
 
@@ -25,7 +24,6 @@ const AdventuresImage = ({ image, id,  }: Props) => {
           className="like-wrapper"
           onClick={() => {
             isLiked ? dispatch(removeLike(id)) : dispatch(addLike(id));
-            changePostCount(1);
           }}
         >
           {isLiked ? <FavoriteIcon /> : <FavoriteBorderIcon />}

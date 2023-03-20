@@ -2,7 +2,7 @@ import LikesCounter from "components/likes-counter/LikesCounter";
 import "./Menu.scss";
 import MenuItem from "./MenuItem";
 
-type Props = { favorData: { totalCount: number } };
+type Props = {};
 
 const Menu = (props: Props) => {
   return (
