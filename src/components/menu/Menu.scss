@@ -19,5 +19,15 @@ text-decoration: none;
 
 .active-menu-btn-link {
     text-decoration: none;
-    color: #ac8a62; ;
-    }
+    color: #ac8a62; 
+}
+
+.favor-menu-item, .qaz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.like-icon{
+    margin: 0 5px;
+}

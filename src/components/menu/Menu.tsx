@@ -1,6 +1,6 @@
+import LikesCounter from "components/likes-counter/LikesCounter";
 import "./Menu.scss";
 import MenuItem from "./MenuItem";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 type Props = {};
 
@@ -13,8 +13,10 @@ const Menu = (props: Props) => {
       <MenuItem to={"/places"}>Places</MenuItem>
       <MenuItem to={"/guides"}>Guides</MenuItem>
       <MenuItem to={"/favorites"}>
-        Favorites <FavoriteBorderIcon />
-        <span>0</span>
+        <div className="favor-menu-item">
+          <span>Favorites</span>
+          <LikesCounter />
+        </div>
       </MenuItem>
     </div>
   );

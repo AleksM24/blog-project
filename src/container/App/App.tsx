@@ -21,6 +21,8 @@ import PlacesPostPage from "pages/posts/PlacesPostPage";
 
 type Props = {};
 
+
+
 const theme = createTheme({
   typography: {
     fontFamily: "Montserrat, Helvetica, Arial, sans-serif",
@@ -44,11 +46,11 @@ const App = (props: Props) => {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="/:ctg" element={<Adventures />} />
-          <Route path="places" element={<Places />} />
-          <Route path="guides" element={<Guides />} />
-          <Route path="favorites" element={<Favorites />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/adventures" element={<Adventures />} />
+          <Route path="/places" element={<Places />} />
+          <Route path="/guides" element={<Guides />} />
+          <Route path="/favorites" element={<Favorites />} />
           <Route path="/adventuresPosts/:id" element={<AdventPostPage />} />
           <Route path="/placesPosts/:id" element={<PlacesPostPage />} />
           <Route path="/guidesPosts/:id" element={<GuidesPostPage />} />
