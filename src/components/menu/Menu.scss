@@ -22,12 +22,12 @@ text-decoration: none;
     color: #ac8a62; 
 }
 
-.favor-menu-item, .qaz{
+.favor-menu-item, .like-counter-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.like-icon{
-    margin: 0 5px;
+.likes-counter, .like-icon{
+    margin-left: 5px;
 }

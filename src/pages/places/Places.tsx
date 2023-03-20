@@ -13,7 +13,7 @@ const Places = (props: Props) => {
         </Container>
       </div>
       <section className="categories-content">
-        <>
+        <div>
           <Grid
             container
             direction="row"
@@ -26,9 +26,10 @@ const Places = (props: Props) => {
                 <PlacesCard title={title} image={image} id={id} />
               </Grid>
             ))}
-          </Grid>
-        </>
+          </Grid>          
+        </div>
       </section>
+      
     </>
   );
 };

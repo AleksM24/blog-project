@@ -20,7 +20,7 @@ const AdventuresCard = ({ title, category, description, id, ctg }: Props) => {
       <section className="card-wrap">
         <CardContent>
           <Button className="category-btn">
-            <Link className="category-btn-link" to={`/${ctg}`}>
+            <Link className="category-btn-link" to={"/adventures"}>
               {category}
             </Link>
           </Button>

@@ -13,7 +13,7 @@ import Adventures from "pages/adventures/Adventures";
 import Places from "pages/places/Places";
 import Guides from "pages/guides/Guides";
 import Favorites from "pages/favorites/Favorites";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./App.scss";
 import AdventPostPage from "pages/posts/AdventPostPage";
 import GuidesPostPage from "pages/posts/GuidesPostPage";
@@ -35,31 +35,6 @@ const App = (props: Props) => {
     }, [pathname]);
     return null;
   };
-
-  // const [favorData, setFavorData] = useState<FavorDataProps>({
-  //   totalCount: 0,
-  // });
-
-  // const changePostCount = (count: number) => {
-  //   setFavorData((prevState) => ({
-  //     totalCount: prevState.totalCount + count,
-  //   }));
-  // };
-
-  // const [postsInFavorites, setPostsInFavorites] = useState<PostsInFavorites>({
-  //   1: 25,
-  //   2: 50,
-  // });
-
-  // const addPostToFavorites = (id: number) => {
-  //   setPostsInFavorites(() => ({
-  //     [id]: id,
-  //   }));
-  // };
-
-  // const removePostFromFavorites = () => {
-  //   setPostsInFavorites(() => ({}));
-  // };
 
   return (
     <StyledEngineProvider injectFirst>
