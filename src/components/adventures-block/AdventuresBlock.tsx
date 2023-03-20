@@ -5,9 +5,9 @@ import "./../adventures-block/AdventuresBlock.scss";
 import adventuresArray from "utils/adventuresArray";
 import { Link } from "react-router-dom";
 
-type Props = { changePostCount: (count: number) => void };
+type Props = {};
 
-const AdventuresBlock = ({ changePostCount }: Props) => {
+const AdventuresBlock = (props: Props) => {
   return (
     <Container maxWidth="md">
       <section className="adventure-title">
@@ -19,17 +19,20 @@ const AdventuresBlock = ({ changePostCount }: Props) => {
         justifyContent="flex-start"
         alignItems="center"
       >
-        {adventuresArray.map(({ id, title, description, image }, i) => (
-          <Grid item key={id}>
-            <AdventuresItem
-              title={title}
-              description={description}
-              image={image}
-              id={id}
-              changePostCount={changePostCount}
-            />
-          </Grid>
-        ))}
+        {adventuresArray.map(
+          ({ id, title, category, description, image, ctg }, i) => (
+            <Grid item key={id}>
+              <AdventuresItem
+                ctg={ctg}
+                category={category}
+                title={title}
+                description={description}
+                image={image}
+                id={id}
+              />
+            </Grid>
+          )
+        )}
       </Grid>
       <Container className="discover-more-link" maxWidth="md">
         <div className="wrap-discover-more">

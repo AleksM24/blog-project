@@ -14,11 +14,11 @@ const GuidesPicture = ({ image, id }: Props) => {
   const dispatch = useAppDispatch();
   return (
     <section className="places-picture">
-      <div className="image-wrap">
-        <Link className="guides-title-link" to={`/guidesPosts/${id}`}>
+      <Link className="guides-title-link" to={`/guidesPosts/${id}`}>
+        <div className="image-wrap">
           <img className="place-image" src={image} alt="PlacesImage" />
-        </Link>
-      </div>
+        </div>
+      </Link>
       <div
         className="likes-btn"
         onClick={() =>

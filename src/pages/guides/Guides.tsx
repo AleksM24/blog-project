@@ -19,9 +19,15 @@ const Guides = (props: Props) => {
           alignItems="center"
           spacing={2}
         >
-          {guidesArray.map(({ id, title, image }) => (
+          {guidesArray.map(({ id, title, image, ctg, category }) => (
             <Grid item key={id}>
-              <GuideCard title={title} image={image} id={id} />
+              <GuideCard
+                title={title}
+                image={image}
+                id={id}
+                category={category}
+                ctg={ctg}
+              />
             </Grid>
           ))}
         </Grid>

@@ -6,9 +6,9 @@ import Logo from "components/logo/Logo";
 import { Container } from "@mui/material";
 import "./Header.scss";
 
-type Props = { favorData: { totalCount: number } };
+type Props = {};
 
-const Header = ({ favorData }: Props) => {
+const Header = (props: Props) => {
   return (
     <AppBar position="sticky" className="app-bar">
       <Container maxWidth="xl">
@@ -19,7 +19,7 @@ const Header = ({ favorData }: Props) => {
             component="div"
             sx={{ flexGrow: 1 }}
           ></Typography>
-          <Menu favorData={favorData} />
+          <Menu />
         </Toolbar>
       </Container>
     </AppBar>

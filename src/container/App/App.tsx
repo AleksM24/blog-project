@@ -21,10 +21,6 @@ import PlacesPostPage from "pages/posts/PlacesPostPage";
 
 type Props = {};
 
-type FavorDataProps = {
-  totalCount: number;
-};
-
 const theme = createTheme({
   typography: {
     fontFamily: "Montserrat, Helvetica, Arial, sans-serif",
@@ -40,15 +36,15 @@ const App = (props: Props) => {
     return null;
   };
 
-  const [favorData, setFavorData] = useState<FavorDataProps>({
-    totalCount: 0,
-  });
+  // const [favorData, setFavorData] = useState<FavorDataProps>({
+  //   totalCount: 0,
+  // });
 
-  const changePostCount = (count: number) => {
-    setFavorData((prevState) => ({
-      totalCount: prevState.totalCount + count,
-    }));
-  };
+  // const changePostCount = (count: number) => {
+  //   setFavorData((prevState) => ({
+  //     totalCount: prevState.totalCount + count,
+  //   }));
+  // };
 
   // const [postsInFavorites, setPostsInFavorites] = useState<PostsInFavorites>({
   //   1: 25,
@@ -69,21 +65,15 @@ const App = (props: Props) => {
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Header favorData={favorData} />
+        <Header />
         <ScrollToTop />
         <Routes>
-          <Route
-            path="/"
-            element={<Home changePostCount={changePostCount} />}
-          />
-          <Route path="about" element={<About />} />
-          <Route
-            path="adventures"
-            element={<Adventures changePostCount={changePostCount} />}
-          />
-          <Route path="places" element={<Places />} />
-          <Route path="guides" element={<Guides />} />
-          <Route path="favorites" element={<Favorites />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/adventures" element={<Adventures />} />
+          <Route path="/places" element={<Places />} />
+          <Route path="/guides" element={<Guides />} />
+          <Route path="/favorites" element={<Favorites />} />
           <Route path="/adventuresPosts/:id" element={<AdventPostPage />} />
           <Route path="/placesPosts/:id" element={<PlacesPostPage />} />
           <Route path="/guidesPosts/:id" element={<GuidesPostPage />} />

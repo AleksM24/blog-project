@@ -10,16 +10,18 @@ type Props = {
   title: string;
   description: string;
   id: number;
+  category: string;
+  ctg: string;
 };
 
-const AdventuresCard = ({ title, description, id }: Props) => {
+const AdventuresCard = ({ title, category, description, id, ctg }: Props) => {
   return (
     <Card className="adv-card" sx={{ maxWidth: 375 }}>
       <section className="card-wrap">
         <CardContent>
           <Button className="category-btn">
-            <Link className="category-btn-link" to="/adventures">
-              Adventures
+            <Link className="category-btn-link" to={`/${ctg}`}>
+              {category}
             </Link>
           </Button>
           <Typography className="card-title" variant="h2" component="div">

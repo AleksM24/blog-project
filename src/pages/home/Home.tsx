@@ -6,14 +6,14 @@ import QuoteBlock from "components/quote-block/QuoteBlock";
 import SwiperBlock from "components/swiper/SwiperBlock";
 import "./Home.scss";
 
-type Props = { changePostCount: (count: number) => void };
+type Props = { };
 
-const Home = ({ changePostCount }: Props) => {
+const Home = (props: Props) => {
   return (
     <>
       <SwiperBlock />
       <section className="adventures-wrapper">
-        <AdventuresBlock changePostCount={changePostCount} />
+        <AdventuresBlock  />
       </section>
       <section>
         <QuoteBlock />

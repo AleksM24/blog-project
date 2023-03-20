@@ -1,16 +1,10 @@
+import LikesCounter from "components/likes-counter/LikesCounter";
 import "./Menu.scss";
 import MenuItem from "./MenuItem";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import FavoriteIcon from "@mui/icons-material/Favorite";
 
 type Props = { favorData: { totalCount: number } };
 
-const Menu = ({ favorData }: Props) => {
-  const isFavorLiked = () => {
-    if (favorData.totalCount > 0) return <FavoriteIcon />;
-    else return <FavoriteBorderIcon />;
-  };
-
+const Menu = (props: Props) => {
   return (
     <div className="menu">
       <MenuItem to={"/"}>Home</MenuItem>
@@ -19,8 +13,10 @@ const Menu = ({ favorData }: Props) => {
       <MenuItem to={"/places"}>Places</MenuItem>
       <MenuItem to={"/guides"}>Guides</MenuItem>
       <MenuItem to={"/favorites"}>
-        <span className="favorites-menu-title">Favorites</span> {isFavorLiked()}
-        <span className="favorites-like-icon">{favorData.totalCount}</span>
+        <div className="favor-menu-item">
+          <span>Favorites</span>
+          <LikesCounter />
+        </div>
       </MenuItem>
     </div>
   );

@@ -5,9 +5,9 @@ import AdventuresImage from "components/adventures-block/adventures-item/adventu
 import adventuresArray from "utils/adventuresArray";
 import "./Adventures.scss";
 
-type Props = { changePostCount: (count: number) => void };
+type Props = {  };
 
-const Adventures = ({ changePostCount }: Props) => {
+const Adventures = (props: Props) => {
   return (
     <>
       <div className="subtitle-wrapper">
@@ -23,22 +23,22 @@ const Adventures = ({ changePostCount }: Props) => {
             justifyContent="flex-start"
             alignItems="center"
           >
-            {adventuresArray.map(({ id, title, description, image }, i) => (
-              <Grid item key={id}>
-                <section className="advent-item">
-                  <AdventuresImage
-                    image={image}
-                    id={id}
-                    changePostCount={changePostCount}
-                  />
-                  <AdventuresCard
-                    title={title}
-                    description={description}
-                    id={id}
-                  />
-                </section>
-              </Grid>
-            ))}
+            {adventuresArray.map(
+              ({ id, title, category, description, image, ctg }, i) => (
+                <Grid item key={id}>
+                  <section className="advent-item">
+                    <AdventuresImage image={image} id={id} />
+                    <AdventuresCard
+                      ctg={ctg}
+                      category={category}
+                      title={title}
+                      description={description}
+                      id={id}
+                    />
+                  </section>
+                </Grid>
+              )
+            )}
             ;
           </Grid>
         </Container>

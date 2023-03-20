@@ -1,5 +1,7 @@
 export type GuidePost = {
   id: number;
+  ctg: string;
+  category: string;
   title: string;
   image: string;
   description: string;
@@ -10,6 +12,8 @@ export type GuidePost = {
 const guidesArray: GuidePost[] = [
   {
     id: 6,
+    ctg: "gds",
+    category: "Guides",
     title: "Ut sodales nunc eu",
     image: "/images/blogger-blog-guides-1.jpg",
     description:
@@ -21,6 +25,8 @@ const guidesArray: GuidePost[] = [
   },
   {
     id: 7,
+    ctg: "gds",
+    category: "Guides",
     title: "Maecenas congue augue",
     image: "/images/blogger-blog-guides-2.jpg",
     description:
@@ -32,6 +38,8 @@ const guidesArray: GuidePost[] = [
   },
   {
     id: 8,
+    ctg: "gds",
+    category: "Guides",
     title: "Aliquam mollis purus",
     image: "/images/blogger-blog-guides-3.jpg",
     description:
